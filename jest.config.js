@@ -3,5 +3,5 @@ module.exports = {
     "**/*_test.js",
   ],
   testPathIgnorePatterns: ["/node_modules/"],
-  vervbose: true,
+  verbose: true,
 }
