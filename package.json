@@ -1,6 +1,6 @@
 {
   "name": "uuid2hex",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "uuid(ArrayBuffer/DataView/Buffer) -> String",
   "main": "uuid2hex.js",
   "scripts": {
