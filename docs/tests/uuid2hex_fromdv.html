@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <title>checking...</title>
+  <script src="https://unpkg.com/uuid2hex/uuid2hex.js"></script>
+</head>
+<body>
+  <script>
+    (function(){
+      const ab = new ArrayBuffer(16)
+      const dv = new DataView(ab)
+      dv.setUint32( 0, 0x37760599)
+      dv.setUint32( 4, 0x06330333)
+      dv.setUint32( 8, 0x01234567)
+      dv.setUint32(12, 0x89abcdef)
+      document.title = UUID2Hex.uuid2hex_fromdv(dv)
+    })()
+  </script>
+</body>
+</html>
