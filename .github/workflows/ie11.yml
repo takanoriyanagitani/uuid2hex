@@ -1,0 +1,27 @@
+name: IE11 CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ windows-latest ]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: uuid2hex_fromdv
+      run: |
+        $ie = New-Object -ComObject InternetExplorer.Application
+        $ie.Navigate("https://takanoriyanagitani.github.io/uuid2hex/tests/uuid2hex_fromdv.html")
+        $cnt = 64
+        $e = "37760599063303330123456789abcdef"
+        while (-not $ie.LocationName -eq $e -and $cnt -gt 0){ $cnt--; sleep 1 }
+        $ie.LocationName | findstr $e
