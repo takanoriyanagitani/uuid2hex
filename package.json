@@ -1,6 +1,6 @@
 {
   "name": "uuid2hex",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "uuid(ArrayBuffer/DataView/Buffer) -> String",
   "main": "uuid2hex.js",
   "scripts": {
@@ -12,7 +12,17 @@
     "type": "git",
     "url": "git+https://github.com/takanoriyanagitani/uuid2hex.git"
   },
-  "keywords": [],
+  "keywords": [
+    "uuid",
+    "arraybuffer",
+    "dataview",
+    "buffer",
+    "hex",
+    "hexlify",
+    "string",
+    "ie11",
+    "chrome"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
