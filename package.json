@@ -1,0 +1,29 @@
+{
+  "name": "uuid2hex",
+  "version": "0.0.1",
+  "description": "uuid(ArrayBuffer/DataView/Buffer) -> String",
+  "main": "uuid2hex.js",
+  "scripts": {
+    "test": "jest",
+    "jcov": "jest --coverage",
+    "codecov": "jest --coverage && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takanoriyanagitani/uuid2hex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takanoriyanagitani/uuid2hex/issues"
+  },
+  "homepage": "https://github.com/takanoriyanagitani/uuid2hex#readme",
+  "devDependencies": {
+    "chromedriver": "^83.0.0",
+    "codecov": "^3.7.0",
+    "jest": "^26.0.1",
+    "selenium": "^2.20.0",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  }
+}
