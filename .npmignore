@@ -1,0 +1,4 @@
+.github/
+docs
+jest.config.js
+uuid2hex_test.js
